@@ -1,2 +1,27 @@
 hi i am as
 what are you doing
+import math
+def gcd(a,h):
+    temp=0
+    while(1):
+        temp=a%h
+        if(temp==0):
+            return h
+        a=h
+        h=temp
+p=3
+q=7
+n=p*q
+e=2
+phi=(p-1)*(q-1)
+
+while(e<phi):
+    if(gcd(e,phi)==1):
+        break
+    else:
+        e=e+1
+#d*e=1+k*totient
+k=2
+d=(1+(k*phi))/e
+msg=12.0
+print("Message data=",msg)
